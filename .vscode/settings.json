@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/tendry/Documents/apache-tomcat-10.1.7/lib/jakartaee-migration-1.0.6-shaded.jar",
+        "/home/tendry/Documents/apache-tomcat-10.1.7/lib/servlet-api.jar"
+    ]
+}

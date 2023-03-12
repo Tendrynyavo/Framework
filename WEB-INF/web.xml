@@ -5,7 +5,7 @@
          version="5.0">
     <servlet>
         <servlet-name>front-servlet</servlet-name>
-        <servlet-class>FrontServlet</servlet-class>
+        <servlet-class>etu2070.framework.servlet.FrontServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>front-servlet</servlet-name>
