@@ -21,9 +21,8 @@ public class FrontServlet extends HttpServlet {
             mappingUrls = new HashMap<String, Mapping>();
             String packageName = "etu2070.model";
             URL root = Thread.currentThread().getContextClassLoader().getResource(packageName.replace(".", "/"));
-            File[] files = new File(root.getFile()).listFiles();
-            for (File file : files) {
-                if (!file.isDirectory()) {
+            for (File file : new File(root.getFile()).listFiles()) {
+                if (file.getName().contains(".class")) {
                     String className = file.getName().replaceAll(".class$", "");
                     Class<?> cls = Class.forName(packageName + "." + className);
                     for (Method method : cls.getDeclaredMethods()) {
